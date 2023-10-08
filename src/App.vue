@@ -1,12 +1,12 @@
 <template>
   <div>
-    <demo1 />
+    <Demo2 />
   </div>
 </template>
 
 
 <script setup lang="ts">
-import demo1 from './views/demo-1.vue'
+import Demo2 from './views/demo2.vue'
 </script>
 
 <style scoped></style>
