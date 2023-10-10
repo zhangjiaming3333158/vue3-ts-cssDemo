@@ -101,15 +101,15 @@ $unchoose: #e0e0e0;
         }
       }
       .line1 {
-        left: 68px;
+        left: 67px;
         background-color: $unchoose;
       }
       .line2 {
-        left: 175px;
+        left: 171px;
         background-color: $unchoose;
       }
       .line3 {
-        left: 282px;
+        left: 275px;
         background-color: $unchoose;
       }
     }

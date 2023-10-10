@@ -4,10 +4,10 @@
       <div class="circle-container">
         <div class="circle">
           <button id="close" @click="Close">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times">2</i>
           </button>
           <button id="open" @click="Open">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars">1</i>
           </button>
         </div>
       </div>
@@ -88,18 +88,18 @@ const Open = () => {
   overflow-x: hidden; //水平方向溢出隐藏
   margin: 0;
   .container {
+    position: relative;
     background-color: #fafafa;
     transform-origin: top left; //设置旋转的原点
     transition: transform 0.5s linear; //设置过渡效果
     width: 100vw;
     min-height: 100vh;
     &.show-nav {
-      transform: rotate(-20deg) translateX(200px); //设置旋转角度和位移
+      transform: rotate(-20deg) translateX(0);
     }
     .circle-container {
       position: fixed;
-      top: -100px;
-      left: -100px;
+      transform: translateX(-50%) translateY(-50%);
       .circle {
         width: 200px;
         height: 200px;

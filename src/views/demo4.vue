@@ -13,7 +13,7 @@
 import { ref } from 'vue'
 const search = ref<HTMLElement | null>(null)
 const showInput = () => {
-  const input = search.value?.querySelector('.input')
+  const input = search.value?.querySelector('.input') as HTMLInputElement
   search.value?.classList.toggle('active')
   input?.focus()
 }
