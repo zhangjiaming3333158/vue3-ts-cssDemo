@@ -1,12 +1,9 @@
 <template>
-  <div>
-    <Demo3 />
-  </div>
+  <Demo4 />
 </template>
 
-
 <script setup lang="ts">
-import Demo3 from './views/demo3.vue'
+import Demo4 from './views/demo4.vue'
 </script>
 
 <style scoped></style>
