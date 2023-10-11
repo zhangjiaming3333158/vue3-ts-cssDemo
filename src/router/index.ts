@@ -3,6 +3,7 @@ const Demo1 = () => import('../views/demo1.vue')
 const Demo2 = () => import('../views/demo2.vue')
 const Demo3 = () => import('../views/demo3.vue')
 const Demo4 = () => import('../views/demo4.vue')
+const Demo5 = () => import('../views/demo5.vue')
 
 const routes: RouteRecordRaw[] = [
   {
@@ -28,6 +29,11 @@ const routes: RouteRecordRaw[] = [
     path: '/demo4',
     name: 'Demo4',
     component: Demo4,
+  },
+  {
+    path: '/demo5',
+    name: 'Demo5',
+    component: Demo5,
   },
 ]
 

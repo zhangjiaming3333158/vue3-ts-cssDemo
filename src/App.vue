@@ -5,6 +5,7 @@
       <router-link to="/demo2">2</router-link>
       <router-link to="/demo3">3</router-link>
       <router-link to="/demo4">4</router-link>
+      <router-link to="/demo5">5</router-link>
     </div>
     <div class="left"><router-view></router-view></div>
   </div>
@@ -20,6 +21,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    min-height:100vh ;
     min-width: 50px;
     z-index: 999;
     background-color: #545c64;
