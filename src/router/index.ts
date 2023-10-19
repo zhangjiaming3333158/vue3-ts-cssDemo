@@ -6,6 +6,7 @@ const Demo4 = () => import('../views/demo4.vue')
 const Demo5 = () => import('../views/demo5.vue')
 const Demo6 = () => import('../views/demo6.vue')
 const Demo7 = () => import('../views/demo7.vue')
+const Demo8 = () => import('../views/demo8.vue')
 
 const routes: RouteRecordRaw[] = [
   {
@@ -46,6 +47,11 @@ const routes: RouteRecordRaw[] = [
     path: '/demo7',
     name: 'Demo7',
     component: Demo7,
+  },
+  {
+    path: '/demo8',
+    name: 'Demo8',
+    component: Demo8,
   },
 ]
 
