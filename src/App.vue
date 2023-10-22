@@ -1,15 +1,7 @@
 <template>
   <div class="body">
     <div class="right">
-      <router-link to="/demo1">1</router-link>
-      <router-link to="/demo2">2</router-link>
-      <router-link to="/demo3">3</router-link>
-      <router-link to="/demo4">4</router-link>
-      <router-link to="/demo5">5</router-link>
-      <router-link to="/demo6">6</router-link>
-      <router-link to="/demo7">7</router-link>
-      <router-link to="/demo8">8</router-link>
-      <router-link to="/demo9">9</router-link>
+      <router-link v-for="item in 10" :key="item" :to="`/demo${item}`">{{ item }}</router-link>
     </div>
     <div class="left"><router-view></router-view></div>
   </div>
@@ -25,7 +17,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    min-height:100vh ;
+    min-height: 100vh;
     min-width: 50px;
     z-index: 999;
     background-color: #545c64;
