@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="right">
-      <router-link v-for="item in 10" :key="item" :to="`/demo${item}`">{{ item }}</router-link>
+      <router-link v-for="item in 11" :key="item" :to="`/demo${item}`">{{ item }}</router-link>
     </div>
     <div class="left"><router-view></router-view></div>
   </div>
