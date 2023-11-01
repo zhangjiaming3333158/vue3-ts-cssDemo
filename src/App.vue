@@ -1,13 +1,26 @@
 <template>
   <div class="body">
     <div class="right">
-      <router-link v-for="item in 11" :key="item" :to="`/demo${item}`">{{ item }}</router-link>
+      <router-link
+        v-for="item in 12"
+        :key="item"
+        :to="`/demo${item}`"
+        @click="changeItem(item)"
+        :class="item === Item ? 'active' : ''"
+        >{{ item }}</router-link
+      >
     </div>
     <div class="left"><router-view></router-view></div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+let Item = ref(1)
+const changeItem = (item: number) => {
+  Item.value = item
+}
+</script>
 
 <style scoped lang="scss">
 .body {
@@ -31,6 +44,10 @@
       // 去除a标签固定样式
       text-decoration: none;
       color: #fff;
+    }
+    .active {
+      color: #39c5bb;
+      border-bottom: 1px solid #39c5bb;
     }
   }
   .left {
